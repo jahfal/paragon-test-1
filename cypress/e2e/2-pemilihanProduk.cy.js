@@ -6,7 +6,7 @@ describe("Test case 2", () => {
     loginPage.loginAccount();
   });
 
-  it("Activated toggle button", function () {
+  it("Activated toggle button & Add to basket", function () {
     activateToggleButton();
   });
 });
@@ -30,4 +30,6 @@ function activateToggleButton() {
     .click({ multiple: true, force: true })
     .click({ multiple: true, force: true })
     .click({ multiple: true, force: true })
+
+  cy.xpath("//h1[normalize-space()='Beli sekarang']").click({ multiple: true, force: true })
 }

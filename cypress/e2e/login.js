@@ -3,6 +3,7 @@ class Login {
         cy.visit(
           "https://recruitment-staging-queenbee.paradev.io/login"
         );
+        cy.get('.css-1hyoz7m > .chakra-button').click();
         cy.wait(500);
         cy.get('#chakra-modal--header-1 > svg').eq(0).click();
         cy.xpath("//input[@id='page-login__tabs-number__input-number']").type("082462453");
