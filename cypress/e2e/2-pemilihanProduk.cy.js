@@ -1,6 +1,6 @@
 import Login from "../e2e/login";
 
-describe("Test scenario VC-12", () => {
+describe("Test case 2", () => {
   beforeEach(() => {
     const loginPage = new Login();
     loginPage.loginAccount();

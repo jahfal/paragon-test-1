@@ -1,7 +1,7 @@
 // require('cypress-xpath');
 // import LoginPage from "../../integration/loginPage";
 
-describe("Test case paragon", () => {
+describe("Test case 1", () => {
   // beforeEach(() => {
   //   const loginPage = new LoginPage();
   //   loginPage.loginSuperadmin();
