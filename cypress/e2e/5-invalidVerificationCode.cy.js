@@ -10,12 +10,12 @@ describe("Test case 5", () => {
     cy.wait(1000)
     cy.xpath("//button[normalize-space()='Daftar']").click();
     cy.get('#chakra-modal--body-5 > .chakra-button').click();
-    cy.get('#pin-input-13-0').type("1")
-    cy.get('#pin-input-13-1').type("2")
-    cy.get('#pin-input-13-2').type("3")
-    cy.get('#pin-input-13-3').type("4")
-    cy.get('#pin-input-13-4').type("5")
-    cy.get('#pin-input-13-5').type("9")
+    cy.get('#pin-input-13-0').type("0")
+    cy.get('#pin-input-13-1').type("0")
+    cy.get('#pin-input-13-2').type("0")
+    cy.get('#pin-input-13-3').type("0")
+    cy.get('#pin-input-13-4').type("0")
+    cy.get('#pin-input-13-5').type("0")
     cy.get('.css-15icixv > .chakra-button').click()
     cy.get('.css-15icixv > .chakra-button').click({multiple: true})
   });
