@@ -25,15 +25,13 @@ function activateToggleButton() {
 
   cy.wait(5000); 
   cy.xpath("//button[@id='productDetail-button-counter']//*[name()='svg'][2]/*[name()='path'][1]")
-    .should('be.visible')
-    .click({ multiple: true, force: true }) 
-    .click({ multiple: true, force: true })
-    .click({ multiple: true, force: true })
-    .click({ multiple: true, force: true })
-    .click({ multiple: true, force: true })
-    .click({ multiple: true, force: true })
-    .click({ multiple: true, force: true })
-    .click({ multiple: true, force: true })
+  .should('be.visible')
+  .then(($el) => {
+    for (let i = 0; i < 8; i++) {
+      cy.wrap($el).click({ multiple: true, force: true });
+    }
+  });
+
 
   cy.xpath("//h1[normalize-space()='Beli sekarang']").click({ multiple: true, force: true })
   cy.xpath("//*[name()='path' and contains(@d,'M21.822 7.')]").click();
